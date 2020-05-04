@@ -1,8 +1,11 @@
 {
   "name": "Strapi",
   "description": "Strapi Heroku deployment",
-  "keywords": ["strapi", "heroku"],
-  "repository": "https://github.com/strapi/strapi-starter-react-blog",
+  "keywords": [
+    "strapi",
+    "heroku"
+  ],
+  "repository": "https://github.com/sameer-khaan/strapi-starter-react-blog.git",
   "env": {
     "PROJECT_PATH": {
       "description": "Backend project path",
@@ -11,18 +14,23 @@
     },
     "CLOUDINARY_CLOUD_NAME": {
       "description": "The 'Cloud name' of your Cloudinary account",
-      "required": true
+      "required": true,
+      "value": "sameer-khaan"
     },
     "CLOUDINARY_API_KEY": {
       "description": "The 'API Key' of your Cloudinary account",
-      "required": true
+      "required": true,
+      "value": "278113874519119"
     },
     "CLOUDINARY_API_SECRET": {
       "description": "The 'API Secret' of your Cloudinary account",
-      "required": true
+      "required": true,
+      "value": "pEWPp9fc0MWK5lOvdDo-znbh4HA"
     }
   },
-  "addons": ["heroku-postgresql:hobby-dev"],
+  "addons": [
+    "heroku-postgresql:hobby-dev"
+  ],
   "image": "heroku/nodejs",
   "buildpacks": [
     {
